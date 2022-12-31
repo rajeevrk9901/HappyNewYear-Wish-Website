@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import song from '../audio/AnewaleSaalKoSalaam.mp3';
 
+
 function Music() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -41,7 +42,7 @@ function Music() {
             {/* <audio src="/src/audio/AnewaleSaalKoSalaam.mp3"></audio> */}
             <audio ref={audioRef} src={song} />
             <span className='font-serif font-extralight flex m'>
-                {isPlaying ? <MusicWave /> : ''} Happy New Year
+                {isPlaying ? <MusicWave /> : ''} Happy New Year Song
             </span>
 
             <button button className='font-serif font-bold w-16 h-6 bg-red-300 px-2 rounded-md' onClick={togglePlay} > {isPlaying ? 'Pause' : 'Play'}</button >
