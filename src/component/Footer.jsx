@@ -3,10 +3,10 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <footer className="text-center w-full text-white text-md font-serif">
+            <footer className="text-center bg-gray-800 text-white font-serif">
                 <div className="text-center p-4 " >
                     Made By <span className=''>Rajeev</span>
-                    <a className="text-white" href="https://www.linkedin.com/in/rrk-sde/"> With ❤️ </a>
+                    <a className="text-blue" href="https://www.linkedin.com/in/rrk-sde/"> With ❤️ </a>
                 </div>
             </footer>
         </>

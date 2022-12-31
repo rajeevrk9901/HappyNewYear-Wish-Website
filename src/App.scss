@@ -3,15 +3,15 @@
 
 body,
 html {
-    background: radial-gradient(circle,
-            rgb(64, 0, 255) 0%,
-            rgb(70, 95, 215) 100%);
+    // background: radial-gradient(circle,
+    //         rgb(64, 0, 255) 0%,
+    //         rgb(70, 95, 215) 100%);
     background-size: cover;
     background-image: url("images\bg-img.jpg");
-    // background-image: url("images\2.png");
-    background-repeat: no-repeat;
+
+    // background-repeat: no-repeat;
     // backdrop-filter: blur(120px);
-    height: 91vh;
+    height: 97vh;
 }
 
 body {

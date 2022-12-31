@@ -49,6 +49,7 @@ function App() {
         snowflakeCount={180} />
       <Footer />
     </>
+
   );
 }
 
