@@ -38,11 +38,11 @@ function Music() {
 
 
     return (
-        <div className='absolute top-2 right-0 px-4 pl-12 flex justify-between w-full'>
+        <div className='absolute top-2 right-0 px-4 pl-12 pr-8 flex justify-between w-full'>
             {/* <audio src="/src/audio/AnewaleSaalKoSalaam.mp3"></audio> */}
             <audio ref={audioRef} src={song} />
             <span className='font-serif font-extralight flex m'>
-                {isPlaying ? <MusicWave /> : ''} Happy New Year Song
+                {isPlaying ? <MusicWave /> : ''} Happy New Year Song ...
             </span>
 
             <button button className='font-serif font-bold w-16 h-6 bg-red-300 px-2 rounded-md' onClick={togglePlay} > {isPlaying ? 'Pause' : 'Play'}</button >
