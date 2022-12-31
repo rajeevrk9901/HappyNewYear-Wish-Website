@@ -24,7 +24,7 @@ function Music() {
 
     const MusicWave = () => {
         return (
-            <div class="boxContainer mx-8">
+            <div class="boxContainer mr-6">
                 <div class="box box1"></div>
                 <div class="box box2"></div>
                 <div class="box box3"></div>
@@ -37,14 +37,14 @@ function Music() {
 
 
     return (
-        <div className='absolute top-6 right-12 flex'>
+        <div className='absolute top-2 right-0 px-4 pl-12 flex justify-between w-full'>
             {/* <audio src="/src/audio/AnewaleSaalKoSalaam.mp3"></audio> */}
             <audio ref={audioRef} src={song} />
-            <span className='font-serif font-extralight pr-4 flex mx-4'>
+            <span className='font-serif font-extralight flex m'>
                 {isPlaying ? <MusicWave /> : ''} Happy New Year
             </span>
 
-            <button button className='font-serif font-bold bg-red-300 px-2 rounded-md' onClick={togglePlay} > {isPlaying ? 'Pause' : 'Play'}</button >
+            <button button className='font-serif font-bold w-16 h-6 bg-red-300 px-2 rounded-md' onClick={togglePlay} > {isPlaying ? 'Pause' : 'Play'}</button >
         </div >
     );
 }
